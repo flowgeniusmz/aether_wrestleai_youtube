@@ -1,0 +1,26 @@
+youtube-transcript-api
+streamlit
+pandas
+plotly
+pygwalker
+openai
+opencv-python-headless
+tavily-python
+beautifulsoup4
+requests
+supabase
+urllib3
+streamlit_elements
+streamlit_extras
+extra_streamlit_components
+ipython
+pillow
+numpy
+pytube
+pydub
+youtube-transcript-api
+moviepy
+yt-dlp  # Replaced youtube_dl
+google-api-python-client
+ffmpeg-python  # Replaced ffmpeg
+openai-agents
