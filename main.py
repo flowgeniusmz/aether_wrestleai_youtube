@@ -22,8 +22,8 @@ logo = st.logo(image=image, size=size, icon_image=icon_image, link=link)
 page_home = st.Page(page="app/0_home.py", title="Home", url_path="/home", default=True)
 page_transcript = st.Page(page="app/1_transcripts.py", title="Transcripts", url_path="/transcripts")
 page_formatter = st.Page(page="app/2_formatter.py", title="Formatter", url_path="/formatter")
-
-pages = [page_home, page_transcript, page_formatter]
+page_formatter_v2 = st.Page(page="app/3_formatterv2.py", title="Formatter V2", url_path="/formatter2")
+pages = [page_home, page_transcript, page_formatter, page_formatter_v2]
 
 # 4. Set Navigation
 navigation = st.navigation(pages=pages)
