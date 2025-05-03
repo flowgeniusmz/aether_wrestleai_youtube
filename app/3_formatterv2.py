@@ -91,14 +91,10 @@ if btn_submit:
         user_message = get_user_message(transcript=raw_transcript, week=week, session=session, title=title, summary_bullets=summary_bullets)
         response_output = get_response(user_message=user_message)
         st.success("✅ Response provided successfully")
+        st.download_button(label="💾 Download Transcript as .txt",data=response_output.model_dump_json(indent=2),file_name="cleaned_transcript.txt",mime="text/plain")
         st.text_area(label="Output", value=response_output, height=400)
         st.json(response_output.model_dump_json(indent=2))
 
-        st.download_button(
-            label="💾 Download Transcript as .txt",
-            data=response_output.model_dump_json(indent=2),
-            file_name="cleaned_transcript.txt",
-            mime="text/plain"
-        )
+        
     else:
         st.warning("⚠️ Please complete all necessary fields")
